@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Akhil Vaidya - AI/ML engineer and researcher portfolio featuring experience, projects, and publications."
+    />
+    <title>Akhil Vaidya | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-shell">
+        <a class="brand" href="#top">Akhil Vaidya</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">AI/ML Engineer and Research Intern</p>
+            <h1>Akhil Vaidya</h1>
+            <p class="hero-copy">
+              Building and deploying machine learning systems with a strong focus on applied research,
+              computer vision, and data-driven products.
+            </p>
+            <div class="hero-meta">
+              <span>Mumbai, Maharashtra</span>
+              <span>B.Tech Computer Engineering, SPIT</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn primary" href="https://github.com/AkhilVaidya91" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/akhil-vaidya-90487a257/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="mailto:akhil.vaidya22@spit.ac.in">Email</a>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Quick profile summary">
+            <h2>Profile Snapshot</h2>
+            <ul>
+              <li>Research internships at SPJIMR and IIT Patna</li>
+              <li>Publications across Elsevier, IEEE, and Springer</li>
+              <li>Production-focused projects in multimodal AI and MLOps</li>
+              <li>Hands-on stack: FastAPI, PyTorch, TensorRT, Docker, vLLM</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-muted reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Professional Experience</p>
+            <h2>Research and engineering work</h2>
+          </div>
+
+          <article class="entry-card">
+            <div class="entry-head">
+              <div>
+                <h3>Research Intern (Data Analytics)</h3>
+                <p class="entry-org">S. P. Jain Institute of Management and Research</p>
+              </div>
+              <p class="entry-date">Oct 2024 - Present</p>
+            </div>
+            <div class="entry-links">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705125019641" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://github.com/AkhilVaidya91/QualiVec" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+            <ul>
+              <li>Built QualiVec, a transformer-based qualitative content analysis framework, and co-authored an Elsevier publication.</li>
+              <li>Achieved 96.5% F1-score on thematic classification across 100+ corporate annual reports with calibrated thresholds.</li>
+              <li>Developed agent-driven data pipelines covering 500+ organizations and 1,250+ documents for UN SDG research.</li>
+            </ul>
+          </article>
+
+          <article class="entry-card reveal">
+            <div class="entry-head">
+              <div>
+                <h3>Research Intern (Computer Vision)</h3>
+                <p class="entry-org">Indian Institute of Technology, Patna</p>
+              </div>
+              <p class="entry-date">Jan 2025 - Jun 2025</p>
+            </div>
+            <div class="entry-links">
+              <a href="https://drive.google.com/drive/folders/1VFEmXlPviXGsQgixweTQMiBx7eTJkorD?usp=sharing" target="_blank" rel="noopener noreferrer">Research Artifacts</a>
+            </div>
+            <ul>
+              <li>Built a transformer-based vehicle re-identification pipeline with 98.75% Top-1 accuracy and 15% gain over CNN baselines.</li>
+              <li>Integrated YOLOv12 detection with mAP@50 of 0.851 for robust low-light and occlusion handling.</li>
+              <li>Applied GradCAM and t-SNE for interpretability; work accepted in Springer TIPCE 2025.</li>
+            </ul>
+          </article>
+
+          <article class="entry-card reveal">
+            <div class="entry-head">
+              <div>
+                <h3>Software Developer Intern</h3>
+                <p class="entry-org">Six Ladders</p>
+              </div>
+              <p class="entry-date">Jun 2024 - Aug 2024</p>
+            </div>
+            <ul>
+              <li>Developed a FastAPI microservice for handwritten answer segmentation using LLaVA, USE embeddings, and HDBSCAN.</li>
+              <li>Reached 86% question-grouping accuracy for batch grading workflows.</li>
+              <li>Implemented a multi-agent LLM workflow with Llama 3.1 70B for adaptive learning roadmap generation.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected builds</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>MedRAG: Radiology Report Validation</h3>
+              <p class="stack">FastAPI, Docker, Supabase, pgvector, Grafana, vLLM</p>
+              <p>Multimodal RAG system using 30,000+ MIMIC-CXR samples and MedSigLIP embeddings for image-text retrieval and report validation.</p>
+              <div class="entry-links">
+                <a href="https://akhilvaidya91.github.io/MedRAG/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/AkhilVaidya91/MedRAG" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Vision Transformer from Scratch</h3>
+              <p class="stack">PyTorch, TensorRT, OpenCV, Flask</p>
+              <p>Trained a 17.8M parameter ViT on GTSRB with 96.58% accuracy and optimized inference to 1.62ms p95 on NVIDIA T4.</p>
+              <div class="entry-links">
+                <a href="https://github.com/AkhilVaidya91/ViT-From-Scratch" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>ForestAudio</h3>
+              <p class="stack">LightGBM, DEiT, MLflow, TensorRT</p>
+              <p>Distributed edge-cloud surveillance system for illegal logging detection with 86% accuracy and sub-20ms edge latency.</p>
+              <div class="entry-links">
+                <a href="https://github.com/AkhilVaidya91/ForestAudio" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>LLM Manipulation Detection</h3>
+              <p class="stack">PyTorch, Transformers, Scikit-learn</p>
+              <p>Adversarial manipulation detection in ranking systems using hidden-state probes on Llama 3.2 with 0.97 AUC-ROC.</p>
+              <div class="entry-links">
+                <a href="https://github.com/AkhilVaidya91/Manipulation_Detection" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Flight Reliability and Delay Analytics</h3>
+              <p class="stack">Python, Pandas, XGBoost, Plotly Dash</p>
+              <p>Analyzed 3M+ flight records, built delay prediction models, and developed an interactive dashboard for reliability benchmarking.</p>
+              <div class="entry-links">
+                <a href="https://github.com/AkhilVaidya91/FlightDataProject" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-muted reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Technical Skills</p>
+            <h2>Core stack</h2>
+          </div>
+
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3>Programming</h3>
+              <p>Python, C++, MySQL, PostgreSQL, MongoDB</p>
+            </div>
+            <div class="skill-group">
+              <h3>Machine Learning and AI</h3>
+              <p>TensorFlow, PyTorch, Scikit-learn, Transformers, MLflow, LangChain, vLLM, MCP</p>
+            </div>
+            <div class="skill-group">
+              <h3>Web and Software</h3>
+              <p>FastAPI, Django, React, Docker, Kubernetes, Prometheus, Grafana</p>
+            </div>
+            <div class="skill-group">
+              <h3>Cloud and DevOps</h3>
+              <p>AWS, Azure, SageMaker, Databricks, Ansible, Terraform, Tableau, PySpark</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Publications</p>
+            <h2>Research output</h2>
+          </div>
+          <ul class="pub-list">
+            <li>
+              <span>Traffic Sign Recognition System - IEEE</span>
+              <a href="https://doi.org/10.1109/SSITCON62437.2024.10795884" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+            <li>
+              <span>Decision Support Content Analysis - Elsevier</span>
+              <a href="https://doi.org/10.1016/j.knosys.2025.114926" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+            <li>
+              <span>Automated Urban Zone Classification - IEEE</span>
+              <a href="https://doi.org/10.1109/ICERECT65215.2025.11379759" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+            <li>
+              <span>Vehicle Fingerprinting Swin Transformer - Springer (Accepted)</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-muted reveal">
+        <div class="container split-grid">
+          <div>
+            <div class="section-head compact">
+              <p class="eyebrow">Education</p>
+              <h2>B.Tech. in Computer Engineering</h2>
+            </div>
+            <p class="edu-line">Bharatiya Vidya Bhavan's Sardar Patel Institute of Technology</p>
+            <p class="edu-line muted">Nov 2022 - Jun 2026 · Mumbai, Maharashtra</p>
+          </div>
+
+          <div>
+            <div class="section-head compact">
+              <p class="eyebrow">Academic Activities</p>
+              <h2>Teaching and Mentorship</h2>
+            </div>
+            <ul class="activity-list">
+              <li>
+                <span>Teaching Assistant, DBMS and DL (SPIT)</span>
+                <a href="https://drive.google.com/file/d/1TpEc1uWA9xT1rW6KauOqLKJ9EJz4r6CA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate</a>
+              </li>
+              <li>
+                <span>Student Mentor, New Beginnings Initiative (SPIT)</span>
+                <a href="https://drive.google.com/file/d/1-jkQL7Y7UkqRPzqaoY9u7z6KlyDlpIHb/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer reveal">
+      <div class="container footer-grid">
+        <p>Akhil Vaidya</p>
+        <div class="footer-links">
+          <a href="mailto:akhil.vaidya22@spit.ac.in">akhil.vaidya22@spit.ac.in</a>
+          <a href="https://www.linkedin.com/in/akhil-vaidya-90487a257/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/AkhilVaidya91" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
